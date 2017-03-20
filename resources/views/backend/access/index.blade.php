@@ -33,6 +33,7 @@
                             <th>{{ trans('labels.backend.access.users.table.name') }}</th>
                             <th>Marca</th>
                             <th>{{ trans('labels.backend.access.users.table.email') }}</th>
+                            <th>Clave</th>
                             <th>Telefono</th>
                             <th>Carpa</th>
                             <th>{{ trans('labels.backend.access.users.table.confirmed') }}</th>
@@ -46,6 +47,7 @@
                         <td>{{$user->name}}</td>
                         <td>{{$user->brand}}</td>
                         <td>{{$user->email}}</td>
+                        <td>{{$user->password_decode}}</td>
                         <td>{{$user->phone}}</td>
                         <td>
                           <?php
