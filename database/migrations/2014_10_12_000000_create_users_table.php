@@ -26,7 +26,6 @@ class CreateUsersTable extends Migration
             $table->string('password')->nullable();
             $table->string('password_decode')->nullable();
             $table->boolean('blocked')->nullable()->default(0);
-            $table->boolean('status')->nullable();
             $table->boolean('active')->nullable();
             $table->rememberToken();
             $table->timestamps();
