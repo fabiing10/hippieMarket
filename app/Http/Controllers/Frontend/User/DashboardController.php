@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Crypt;
 use \App\Code;
 use \App\UserCode;
 use \App\Confirmation;
+use \App\Confirmation;
+use App\Models\Access\User\User;
 /**
  * Class DashboardController.
  */
