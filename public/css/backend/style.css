@@ -1,0 +1,44 @@
+.content-wrapper, .main-footer, .right-side {
+    margin-left: 0px !important;
+}
+div#seleccionar { width: 500px; }
+label { margin-bottom: 0px; width: 100%;}
+.input-form { border-bottom: 1px solid #b7b7b7; }
+span.out {
+    display: block;
+    text-align: center;
+    color: #9e4c4c;
+    background-color: #ffc8c8;
+}
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    /* padding: 10px; */
+    background-color: #e8e8e8;
+}
+.no{
+  border: 0px solid #dddddd;
+  background-color: transparent !important;
+  padding: 10px;
+}
+.image{
+  background-image: url("http://regionmojana.com/imagen.png");
+  background-size: contain;
+  padding: 10px;
+}
+.button{
+  cursor: pointer;
+}
+input{
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid;
+  cursor: pointer;
+}
+.container-options {
+    height: 90px;
+}
