@@ -5,6 +5,15 @@
 div#seleccionar { width: 500px; }
 label { margin-bottom: 0px; width: 100%;}
 .input-form { border-bottom: 1px solid #b7b7b7; }
+input.error {
+    background-color: #ffefef;
+    border-bottom: 1px solid #ff9b9b;
+}
+label.error {
+    font-weight: normal;
+    color: red;
+    font-size: 11px;
+}
 span.out {
     display: block;
     text-align: center;
@@ -571,7 +580,7 @@ input{
 <a href="#" data-fancybox data-src="#seleccionar" href="javascript:;" style="display:none;" id="seleccionar_carpa"></a>
 
 <div style="display: none;" id="seleccionar" style="width: 500px;">
-      <form role="form" action="" enctype="multipart/form-data" method="POST">
+      <form role="form" action="" enctype="multipart/form-data" method="POST" id="condiciones_form">
         {!! csrf_field() !!}
         <input type="hidden" name="carpa" id="carpa" value="" />
           <h2><center>Registrar Carpa</center></h2>
@@ -585,11 +594,12 @@ input{
   				<div class="col-md-12 form-group">
             <label>Tipo Organizacion</label>
             <select name="tipo_organizacion" class="input-form">
+              <option value="-1">Seleccione una opcion</option>
               <option value="Razon Social">Razón social </option>
               <option value="Persona Natural">Persona natural</option>
             </select>
   				</div>
-          <div class="col-lg-12 form-group">
+          <div class="col-md-12 form-group">
             <label>NIT</label>
             <input type="text" name="nit" id="nit" value="" class="input-form" autocomplete="off"/>
   				</div>
