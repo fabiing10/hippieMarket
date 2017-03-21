@@ -16,9 +16,14 @@ Route::group([
         'middleware' => 'access.routeNeedsPermission:manage-users',
     ], function () {
         Route::group(['namespace' => 'User'], function () {
+
+
+            Route::post('email', 'UserController@sendEmail');
             /*
              * For DataTables
              */
+
+
             Route::post('user/get', 'UserTableController')->name('user.get');
 
             /*

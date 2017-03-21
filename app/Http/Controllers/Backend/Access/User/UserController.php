@@ -66,6 +66,31 @@ class UserController extends Controller
 
     }
 
+    public function sendEmail(ManageUserRequest $request){
+      $usuarioId = $request->usuario_email;
+      /*\Mail::send('welcome', [], function ($message){
+          $message->to('fabiing10@gmail.com')->subject('Testing mail');
+      });*/
+
+      $users = \DB::table('users as user')
+        ->select('*')
+        ->where('user.id','=',$usuarioId)
+        ->get();
+
+      foreach($users as $user){
+        $email_to = $user->email;
+        $username = $user->username;
+        $password = $user->password_decode;
+      }
+
+      $data = array( 'email' => $email_to, 'username' => $username, 'password' => $password );
+      \Mail::send( 'email', $data, function( $message ) use ($data)
+      {
+          $message->to( $data['email'] )->from('email@laspuertasdelcielo.co', 'Las Puertas Del Cielo' )->subject( 'Registro Hippie Market' );
+      });
+      return redirect('/admin/access/user');
+    }
+
     /**
      * @param ManageUserRequest $request
      *

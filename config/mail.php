@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MANDRILL_DRIVER', 'smtp'),
+    'driver' => 'smtp',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MANDRILL_ADDRESS', 'email@laspuertasdelcielo.co'),
-        'name' => env('MANDRILL_NAME', 'Las Puertas Del Cielo'),
+        'address' => 'email@laspuertasdelcielo.co',
+        'name' => 'Las Puertas Del Cielo',
     ],
 
     /*
