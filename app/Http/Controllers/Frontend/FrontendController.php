@@ -18,6 +18,10 @@ class FrontendController extends Controller
 
         return redirect('login');
     }
+    
+    public function home(){
+      return redirect('/dashboard');
+    }
 
     /**
      * @return \Illuminate\View\View

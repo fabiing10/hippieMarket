@@ -204,4 +204,8 @@ class UserController extends Controller
       return redirect('/admin/access/user');
 
     }
+
+    public function home(){
+      return redirect('/dashboard');
+    }
 }

@@ -92,4 +92,7 @@ class DashboardController extends Controller
 
       return redirect('dashboard');
     }
+    public function home(){
+      return redirect('/dashboard');
+    }
 }

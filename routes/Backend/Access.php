@@ -3,6 +3,8 @@
 /**
  * All route names are prefixed with 'admin.access'.
  */
+ Route::get('/home', 'UserController@home')->name('home');
+
 Route::group([
     'prefix'     => 'access',
     'as'         => 'access.',
