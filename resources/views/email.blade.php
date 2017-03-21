@@ -33,12 +33,12 @@
                       </tr>
                       <tr>
                           <td>
-                            {{$data['username']}}
+                            {{$data['email']}}
                           </td>
                       </tr>
                       <tr>
                           <td>
-                            {{$data['username']}}
+                            {{$data['password']}}
                           </td>
                       </tr>
 
