@@ -6,18 +6,20 @@
         <table>
             <tr>
                 <td>
-                    Bienvenido al Registro de Hippie Market
+                    <center><h3>Bienvenido al Registro de Hippie Market</h3></center>
+                    <br>
                 </td>
             </tr>
             <tr>
                 <td>
-                    Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.
+                    <p style="text-align:justify;">Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.</p>
+                    <br><br>
                 </td>
                 <td>
-                    Informacion De Acceso
+                    <h3>Informacion De Acceso</h3>
                 </td>
                 <td>
-                    <a href="registro.laspuertasdelcielo.co">Link de Registro</a>
+                    <center><a href="registro.laspuertasdelcielo.co">Link de Registro</a></center>
                 </td>
             </tr>
             <tr>
@@ -25,20 +27,20 @@
                   <table>
                       <tr>
                           <td>
-                              Username
+                              <center>Username</center>
                           </td>
                           <td>
-                              Password
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                            {{$data['email']}}
+                              <center>Password</center>
                           </td>
                       </tr>
                       <tr>
                           <td>
-                            {{$data['password']}}
+                            <center>{{$email}}</center>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                            <center>{{$password}}</center>
                           </td>
                       </tr>
 

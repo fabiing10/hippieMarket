@@ -2,6 +2,15 @@ $(document).ready(function(){
     $('#dataTable').DataTable({
       responsive: true
     });
+
+    $("#myform").validate({
+       rules: {
+         name: "required",
+         name: "required",
+         name: "required",
+
+       }
+     });
 });
 
 
