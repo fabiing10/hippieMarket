@@ -600,7 +600,7 @@
                     <option value="Persona Natural">Persona natural</option>
                   </select>
         				</div>
-                <div class="col-lg-12 form-group">
+                <div class="col-md-12 form-group">
                   <label>NIT</label>
                   <input type="text" name="nit" id="nit" value="" class="input-form" autocomplete="off"/>
         				</div>
