@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MANDRILL_HOST', 'smtp.mandrillapp.com'),
+    'host' => 'smtp.mandrillapp.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MANDRILL_PORT', 587),
+    'port' => 587,
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MANDRILL_ENCRYPTION', 'tls'),
+    'encryption' => 'tls',
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('Eventos'),
+    'username' => 'Eventos',
 
-    'password' => env('P6wQbTEYhFTotroSMTXZqQ'),
+    'password' => 'P6wQbTEYhFTotroSMTXZqQ',
 
     /*
     |--------------------------------------------------------------------------
