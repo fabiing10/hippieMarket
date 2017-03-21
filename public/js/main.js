@@ -3,14 +3,6 @@ $(document).ready(function(){
       responsive: true
     });
 
-    $("#myform").validate({
-       rules: {
-         name: "required",
-         name: "required",
-         name: "required",
-
-       }
-     });
 });
 
 
