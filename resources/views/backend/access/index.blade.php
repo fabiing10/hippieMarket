@@ -317,7 +317,7 @@
                                 </table>
                                 </div>
                                 <div class="container-options">
-
+                                {{ Html::image('img/imagen_carpas.jpg') }}
                                 </div>
                                 <div>
                                   <table>

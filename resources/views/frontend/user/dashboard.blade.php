@@ -50,16 +50,18 @@ input{
   cursor: pointer;
 }
 .container-options {
-    height: 90px;
+  height: auto;
 }
-
+.container-options img{
+  margin: 0 auto;
+  display: block;
+  width: 85%;
+}
 </style>
 @endsection
 @section('content')
     <div class="row">
-
         <div class="col-xs-12">
-
             <div class="panel panel-default">
                 <div class="panel-heading">
 
@@ -328,7 +330,7 @@ input{
                           </table>
                           </div>
                           <div class="container-options">
-
+                          {{ Html::image('img/imagen_carpas.jpg') }}
                           </div>
                           <div>
                             <table>

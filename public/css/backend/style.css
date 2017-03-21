@@ -40,5 +40,10 @@ input{
   cursor: pointer;
 }
 .container-options {
-    height: 90px;
+  height: auto;
+}
+.container-options img{
+  margin: 0 auto;
+  display: block;
+  width: 85%;
 }
