@@ -12,19 +12,22 @@
             </tr>
             <tr>
                 <td>
-                    <p style="text-align:justify;">Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.</p>
+                    <p style="text-align:center;">Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.</p>
                     <br><br>
                 </td>
 
             </tr>
             <tr>
               <td>
-                  <h3>Informacion De Acceso</h3>
+                  <center><h3>Informacion De Acceso</h3></center>
               </td>
             </tr>
             <tr>
+
+
+
               <td>
-                  <center><a href="registro.laspuertasdelcielo.co">Link de Registro</a></center>
+                  <center><a href="registro.laspuertasdelcielo.co" style="background-color: rgba(128, 128, 128, 0.44);color: black;text-decoration: none;padding: 10px;width: 100%;display: block;margin-bottom: 20px;">Link de Registro</a></center>
               </td>
             </tr>
             <tr>
@@ -32,10 +35,10 @@
                   <table style="width:100%;">
                       <tr>
                           <td>
-                              <center>Username</center>
+                              <center><b>Username</b></center>
                           </td>
                           <td>
-                              <center>Password</center>
+                              <center><b>Password</b></center>
                           </td>
                       </tr>
                       <tr>
