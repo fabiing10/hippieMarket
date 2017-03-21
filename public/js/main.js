@@ -6,8 +6,11 @@ $(document).ready(function(){
 
 
 function loadRegister(value){
-  console.log(value)
-
   $("#carpa").val(value);
   $("#seleccionar_carpa").trigger("click");
+}
+
+
+function enviarEmail(value){
+  $("#usuario_email").val(value);
 }

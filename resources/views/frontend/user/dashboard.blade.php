@@ -106,13 +106,12 @@ input{
                                 @endif
                               </th>
                               <th>
-                                @if($c->getStatus(6))  <span class="out">6</span> @else
+                                @if($c->getStatus(6))<span class="out">6</span> @else
                                 <input type="button" value="6" name="carpa" onclick="loadRegister('{{Crypt::encrypt('6')}}')">
                                 @endif
                               </th>
                               <th class="no"></th>
-                              <th class="no"></th>
-                              <th class="no"></th>
+
                               <th>
                                 @if($c->getStatus(7))  <span class="out">7</span> @else
                                 <input type="button" value="7" name="carpa" onclick="loadRegister('{{Crypt::encrypt('7')}}')">
@@ -125,7 +124,6 @@ input{
                               </th>
                               <th class="no"></th>
                               <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(9))  <span class="out">9</span> @else
                                 <input type="button" value="9" name="carpa" onclick="loadRegister('{{Crypt::encrypt('9')}}')">
@@ -136,6 +134,7 @@ input{
                                 <input type="button" value="10" name="carpa" onclick="loadRegister('{{Crypt::encrypt('10')}}')">
                                 @endif
                               </th>
+                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(11))  <span class="out">11</span> @else
                                 <input type="button" value="11" name="carpa" onclick="loadRegister('{{Crypt::encrypt('11')}}')">
@@ -146,8 +145,6 @@ input{
                                 <input type="button" value="12" name="carpa" onclick="loadRegister('{{Crypt::encrypt('12')}}')">
                                 @endif
                               </th>
-                              <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(13))  <span class="out">13</span> @else
                                 <input type="button" value="13" name="carpa" onclick="loadRegister('{{Crypt::encrypt('13')}}')">
@@ -158,23 +155,23 @@ input{
                                 <input type="button" value="14" name="carpa" onclick="loadRegister('{{Crypt::encrypt('14')}}')">
                                 @endif
                               </th>
+                              <th class="no"></th>
+                              <th class="no"></th>
+                              <th>
+                                @if($c->getStatus(15))  <span class="out">15</span> @else
+                                <input type="button" value="15" name="carpa" onclick="loadRegister('{{Crypt::encrypt('15')}}')">
+                                @endif
+                              </th>
+                              <th>
+                                @if($c->getStatus(16))  <span class="out">16</span> @else
+                                <input type="button" value="16" name="carpa" onclick="loadRegister('{{Crypt::encrypt('16')}}')">
+                                @endif
+                              </th>
                             </tr>
                             <tr>
                               <td colspan="24" class="image"></td>
                             </tr>
                             <tr>
-                              <th>
-                                @if($c->getStatus(15))  <span class="out">15</span> @else
-                                <input type="button" value="15" name="carpa" onclick="loadRegister('{{Crypt::encrypt('15')}}')">
-                                @endif
-                              </th>
-                              <th>
-                                @if($c->getStatus(15))  <span class="out">15</span> @else
-                                <input type="button" value="15" name="carpa" onclick="loadRegister('{{Crypt::encrypt('15')}}')">
-                                @endif
-                              </th>
-                              <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(17))  <span class="out">17</span> @else
                                 <input type="button" value="17" name="carpa" onclick="loadRegister('{{Crypt::encrypt('17')}}')">
@@ -185,6 +182,9 @@ input{
                                 <input type="button" value="18" name="carpa" onclick="loadRegister('{{Crypt::encrypt('18')}}')">
                                 @endif
                               </th>
+                              <th class="no"></th>
+                              <th class="no"></th>
+
                               <th>
                                 @if($c->getStatus(19))  <span class="out">19</span> @else
                                 <input type="button" value="19" name="carpa" onclick="loadRegister('{{Crypt::encrypt('19')}}')">
@@ -205,10 +205,6 @@ input{
                                 <input type="button" value="22" name="carpa" onclick="loadRegister('{{Crypt::encrypt('22')}}')">
                                 @endif
                               </th>
-                              <th class="no"></th>
-                              <th class="no"></th>
-                              <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(23))  <span class="out">23</span> @else
                                 <input type="button" value="23" name="carpa" onclick="loadRegister('{{Crypt::encrypt('23')}}')">
@@ -219,6 +215,9 @@ input{
                                 <input type="button" value="24" name="carpa" onclick="loadRegister('{{Crypt::encrypt('24')}}')">
                                 @endif
                               </th>
+                              <th class="no"></th>
+
+
                               <th>
                                 @if($c->getStatus(25))  <span class="out">25</span> @else
                                 <input type="button" value="25" name="carpa" onclick="loadRegister('{{Crypt::encrypt('25')}}')">
@@ -229,6 +228,8 @@ input{
                                 <input type="button" value="26" name="carpa" onclick="loadRegister('{{Crypt::encrypt('26')}}')">
                                 @endif
                               </th>
+                              <th class="no"></th>
+
                               <th>
                                 @if($c->getStatus(27))  <span class="out">27</span> @else
                                 <input type="button" value="27" name="carpa" onclick="loadRegister('{{Crypt::encrypt('27')}}')">
@@ -239,8 +240,6 @@ input{
                                 <input type="button" value="28" name="carpa" onclick="loadRegister('{{Crypt::encrypt('28')}}')">
                                 @endif
                               </th>
-                              <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(29))  <span class="out">29</span> @else
                                 <input type="button" value="29" name="carpa" onclick="loadRegister('{{Crypt::encrypt('29')}}')">
@@ -251,18 +250,11 @@ input{
                                 <input type="button" value="30" name="carpa" onclick="loadRegister('{{Crypt::encrypt('30')}}')">
                                 @endif
                               </th>
-                            </tr>
-                            <tr>
-                              <th class="no"></th>
-                              <th class="no"></th>
-                              <th class="no"></th>
-                              <th class="no"></th>
                               <th>
                                 @if($c->getStatus(31))  <span class="out">31</span> @else
                                 <input type="button" value="31" name="carpa" onclick="loadRegister('{{Crypt::encrypt('31')}}')">
                                 @endif
                               </th>
-                              <th colspan="14" class="no"></th>
                               <th>
                                 @if($c->getStatus(32))  <span class="out">32</span> @else
                                 <input type="button" value="32" name="carpa" onclick="loadRegister('{{Crypt::encrypt('32')}}')">
@@ -270,6 +262,36 @@ input{
                               </th>
                               <th class="no"></th>
                               <th class="no"></th>
+                              <th>
+                                @if($c->getStatus(33))  <span class="out">33</span> @else
+                                <input type="button" value="33" name="carpa" onclick="loadRegister('{{Crypt::encrypt('33')}}')">
+                                @endif
+                              </th>
+
+                              <th>
+                                @if($c->getStatus(34))  <span class="out">34</span> @else
+                                <input type="button" value="34" name="carpa" onclick="loadRegister('{{Crypt::encrypt('34')}}')">
+                                @endif
+                              </th>
+                            </tr>
+                            <tr>
+                              <th class="no"></th>
+                              <th class="no"></th>
+                              <th class="no"></th>
+                              <th class="no"></th>
+                              <th>
+                                @if($c->getStatus(35))  <span class="out">35</span> @else
+                                <input type="button" value="35" name="carpa" onclick="loadRegister('{{Crypt::encrypt('35')}}')">
+                                @endif
+                              </th>
+                              <th colspan="14" class="no"></th>
+                              <th>
+                                @if($c->getStatus(36))  <span class="out">36</span> @else
+                                <input type="button" value="36" name="carpa" onclick="loadRegister('{{Crypt::encrypt('36')}}')">
+                                @endif
+                              </th>
+                              <th class="no"></th>
+                              <th class="no"></th>
                               <th class="no"></th>
                               <th class="no"></th>
                             </tr>
@@ -279,14 +301,14 @@ input{
                               <th class="no"></th>
                               <th class="no"></th>
                               <th>
-                                @if($c->getStatus(33))  <span class="out">33</span> @else
-                                <input type="button" value="33" name="carpa" onclick="loadRegister('{{Crypt::encrypt('33')}}')">
+                                @if($c->getStatus(37))  <span class="out">37</span> @else
+                                <input type="button" value="37" name="carpa" onclick="loadRegister('{{Crypt::encrypt('37')}}')">
                                 @endif
                               </th>
                               <th colspan="14" class="no"></th>
                               <th>
-                                @if($c->getStatus(34))  <span class="out">34</span> @else
-                                <input type="button" value="34" name="carpa" onclick="loadRegister('{{Crypt::encrypt('34')}}')">
+                                @if($c->getStatus(38))  <span class="out">38</span> @else
+                                <input type="button" value="38" name="carpa" onclick="loadRegister('{{Crypt::encrypt('38')}}')">
                                 @endif
                               </th>
                               <th class="no"></th>
@@ -307,48 +329,11 @@ input{
                                 <th class="no"></th>
                                 <th class="no"></th>
                                 <th>
-                                  @if($c->getStatus(35))  <span class="out">35</span> @else
-                                  <input type="button" value="35" name="carpa" onclick="loadRegister('{{Crypt::encrypt('35')}}')">
-                                  @endif
-                                </th>
-                                <th colspan="14" class="no"></th>
-                                <th>
-                                  @if($c->getStatus(36))  <span class="out">36</span> @else
-                                  <input type="button" value="36" name="carpa" onclick="loadRegister('{{Crypt::encrypt('36')}}')">
-                                  @endif
-                                </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                              </tr>
-                              <tr>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th>
-                                  @if($c->getStatus(37))  <span class="out">37</span> @else
-                                  <input type="button" value="37" name="carpa" onclick="loadRegister('{{Crypt::encrypt('37')}}')">
-                                  @endif
-                                </th>
-                                <th colspan="14" class="no"></th>
-                                <th>
-                                  @if($c->getStatus(38))  <span class="out">38</span> @else
-                                  <input type="button" value="38" name="carpa" onclick="loadRegister('{{Crypt::encrypt('38')}}')">
-                                  @endif
-                                </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                              </tr>
-                              <tr>
-                                <th>
                                   @if($c->getStatus(39))  <span class="out">39</span> @else
                                   <input type="button" value="39" name="carpa" onclick="loadRegister('{{Crypt::encrypt('39')}}')">
                                   @endif
                                 </th>
+                                <th colspan="14" class="no"></th>
                                 <th>
                                   @if($c->getStatus(40))  <span class="out">40</span> @else
                                   <input type="button" value="40" name="carpa" onclick="loadRegister('{{Crypt::encrypt('40')}}')">
@@ -356,16 +341,31 @@ input{
                                 </th>
                                 <th class="no"></th>
                                 <th class="no"></th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                              </tr>
+                              <tr>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(41))  <span class="out">41</span> @else
                                   <input type="button" value="41" name="carpa" onclick="loadRegister('{{Crypt::encrypt('41')}}')">
                                   @endif
                                 </th>
+                                <th colspan="14" class="no"></th>
                                 <th>
                                   @if($c->getStatus(42))  <span class="out">42</span> @else
                                   <input type="button" value="42" name="carpa" onclick="loadRegister('{{Crypt::encrypt('42')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                              </tr>
+                              <tr>
                                 <th>
                                   @if($c->getStatus(43))  <span class="out">43</span> @else
                                   <input type="button" value="43" name="carpa" onclick="loadRegister('{{Crypt::encrypt('43')}}')">
@@ -376,6 +376,8 @@ input{
                                   <input type="button" value="44" name="carpa" onclick="loadRegister('{{Crypt::encrypt('44')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(45))  <span class="out">45</span> @else
                                   <input type="button" value="45" name="carpa" onclick="loadRegister('{{Crypt::encrypt('45')}}')">
@@ -386,10 +388,6 @@ input{
                                   <input type="button" value="46" name="carpa" onclick="loadRegister('{{Crypt::encrypt('46')}}')">
                                   @endif
                                 </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
-                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(47))  <span class="out">47</span> @else
                                   <input type="button" value="47" name="carpa" onclick="loadRegister('{{Crypt::encrypt('47')}}')">
@@ -410,6 +408,7 @@ input{
                                   <input type="button" value="50" name="carpa" onclick="loadRegister('{{Crypt::encrypt('50')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(51))  <span class="out">51</span> @else
                                   <input type="button" value="51" name="carpa" onclick="loadRegister('{{Crypt::encrypt('51')}}')">
@@ -421,7 +420,6 @@ input{
                                   @endif
                                 </th>
                                 <th class="no"></th>
-                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(53))  <span class="out">53</span> @else
                                   <input type="button" value="53" name="carpa" onclick="loadRegister('{{Crypt::encrypt('53')}}')">
@@ -432,11 +430,6 @@ input{
                                   <input type="button" value="54" name="carpa" onclick="loadRegister('{{Crypt::encrypt('54')}}')">
                                   @endif
                                 </th>
-                              </tr>
-                              <tr>
-                                <td colspan="24" class="image"></td>
-                              </tr>
-                              <tr>
                                 <th>
                                   @if($c->getStatus(55))  <span class="out">55</span> @else
                                   <input type="button" value="55" name="carpa" onclick="loadRegister('{{Crypt::encrypt('55')}}')">
@@ -447,8 +440,6 @@ input{
                                   <input type="button" value="56" name="carpa" onclick="loadRegister('{{Crypt::encrypt('56')}}')">
                                   @endif
                                 </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(57))  <span class="out">57</span> @else
                                   <input type="button" value="57" name="carpa" onclick="loadRegister('{{Crypt::encrypt('57')}}')">
@@ -459,6 +450,8 @@ input{
                                   <input type="button" value="58" name="carpa" onclick="loadRegister('{{Crypt::encrypt('58')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(59))  <span class="out">59</span> @else
                                   <input type="button" value="59" name="carpa" onclick="loadRegister('{{Crypt::encrypt('59')}}')">
@@ -469,8 +462,11 @@ input{
                                   <input type="button" value="60" name="carpa" onclick="loadRegister('{{Crypt::encrypt('60')}}')">
                                   @endif
                                 </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
+                              </tr>
+                              <tr>
+                                <td colspan="24" class="image"></td>
+                              </tr>
+                              <tr>
                                 <th>
                                   @if($c->getStatus(61))  <span class="out">61</span> @else
                                   <input type="button" value="61" name="carpa" onclick="loadRegister('{{Crypt::encrypt('61')}}')">
@@ -481,6 +477,8 @@ input{
                                   <input type="button" value="62" name="carpa" onclick="loadRegister('{{Crypt::encrypt('62')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(63))  <span class="out">63</span> @else
                                   <input type="button" value="63" name="carpa" onclick="loadRegister('{{Crypt::encrypt('63')}}')">
@@ -491,8 +489,6 @@ input{
                                   <input type="button" value="64" name="carpa" onclick="loadRegister('{{Crypt::encrypt('64')}}')">
                                   @endif
                                 </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(65))  <span class="out">65</span> @else
                                   <input type="button" value="65" name="carpa" onclick="loadRegister('{{Crypt::encrypt('65')}}')">
@@ -503,6 +499,8 @@ input{
                                   <input type="button" value="66" name="carpa" onclick="loadRegister('{{Crypt::encrypt('66')}}')">
                                   @endif
                                 </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(67))  <span class="out">67</span> @else
                                   <input type="button" value="67" name="carpa" onclick="loadRegister('{{Crypt::encrypt('67')}}')">
@@ -513,8 +511,6 @@ input{
                                   <input type="button" value="68" name="carpa" onclick="loadRegister('{{Crypt::encrypt('68')}}')">
                                   @endif
                                 </th>
-                                <th class="no"></th>
-                                <th class="no"></th>
                                 <th>
                                   @if($c->getStatus(69))  <span class="out">69</span> @else
                                   <input type="button" value="69" name="carpa" onclick="loadRegister('{{Crypt::encrypt('69')}}')">
@@ -523,6 +519,40 @@ input{
                                 <th>
                                   @if($c->getStatus(70))  <span class="out">70</span> @else
                                   <input type="button" value="70" name="carpa" onclick="loadRegister('{{Crypt::encrypt('70')}}')">
+                                  @endif
+                                </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th>
+                                  @if($c->getStatus(71))  <span class="out">71</span> @else
+                                  <input type="button" value="71" name="carpa" onclick="loadRegister('{{Crypt::encrypt('71')}}')">
+                                  @endif
+                                </th>
+                                <th>
+                                  @if($c->getStatus(72))  <span class="out">72</span> @else
+                                  <input type="button" value="72" name="carpa" onclick="loadRegister('{{Crypt::encrypt('72')}}')">
+                                  @endif
+                                </th>
+                                <th>
+                                  @if($c->getStatus(73))  <span class="out">73</span> @else
+                                  <input type="button" value="73" name="carpa" onclick="loadRegister('{{Crypt::encrypt('73')}}')">
+                                  @endif
+                                </th>
+                                <th>
+                                  @if($c->getStatus(74))  <span class="out">74</span> @else
+                                  <input type="button" value="74" name="carpa" onclick="loadRegister('{{Crypt::encrypt('74')}}')">
+                                  @endif
+                                </th>
+                                <th class="no"></th>
+                                <th class="no"></th>
+                                <th>
+                                  @if($c->getStatus(75))  <span class="out">75</span> @else
+                                  <input type="button" value="75" name="carpa" onclick="loadRegister('{{Crypt::encrypt('75')}}')">
+                                  @endif
+                                </th>
+                                <th>
+                                  @if($c->getStatus(76))  <span class="out">76</span> @else
+                                  <input type="button" value="76" name="carpa" onclick="loadRegister('{{Crypt::encrypt('76')}}')">
                                   @endif
                                 </th>
                               </tr>
@@ -539,17 +569,7 @@ input{
 
     </div><!-- row -->
 <a href="#" data-fancybox data-src="#seleccionar" href="javascript:;" style="display:none;" id="seleccionar_carpa"></a>
-@if($status == true)
-<div style="display: none;" id="seleccionar">
-  <h2><center>Carpa ya seleccionada</center></h2>
-  <h4 class="name-usuario"></h4>
-  <div class="row">
-    <div class="col-md-12">
-      <p>Usted ya ha seleccionado una carpa, su carpa actual es la # {{$carpa}}</p>
-    </div>
-  </div>
-</div>
-@else
+
 <div style="display: none;" id="seleccionar" style="width: 500px;">
       <form role="form" action="" enctype="multipart/form-data" method="POST">
         {!! csrf_field() !!}
@@ -593,7 +613,9 @@ input{
         <button type="submit" class="btn btn-success">Guardar</button>
       </form>
 </div>
-@endif
+
+
+
 
 
 
