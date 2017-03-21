@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td>
-                  <table>
+                  <table style="width:100%;">
                       <tr>
                           <td>
                               <center>Username</center>
