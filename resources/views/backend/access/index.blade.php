@@ -571,7 +571,7 @@
 
             <a href="#" data-fancybox data-src="#seleccionar" href="javascript:;" style="display:none;" id="seleccionar_carpa"></a>
             <div style="display: none;" id="seleccionar">
-              <form role="form" action="user/register" enctype="multipart/form-data" method="POST">
+              <form role="form" action="user/register" enctype="multipart/form-data" method="POST" id="condiciones_form">
                 {!! csrf_field() !!}
                 <input type="hidden" name="carpa" id="carpa" value="" />
 
