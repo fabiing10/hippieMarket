@@ -15,12 +15,17 @@
                     <p style="text-align:justify;">Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.</p>
                     <br><br>
                 </td>
-                <td>
-                    <h3>Informacion De Acceso</h3>
-                </td>
-                <td>
-                    <center><a href="registro.laspuertasdelcielo.co">Link de Registro</a></center>
-                </td>
+
+            </tr>
+            <tr>
+              <td>
+                  <h3>Informacion De Acceso</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <center><a href="registro.laspuertasdelcielo.co">Link de Registro</a></center>
+              </td>
             </tr>
             <tr>
                 <td>
@@ -37,8 +42,7 @@
                           <td>
                             <center>{{$email}}</center>
                           </td>
-                      </tr>
-                      <tr>
+
                           <td>
                             <center>{{$password}}</center>
                           </td>
