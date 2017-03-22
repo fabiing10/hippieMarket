@@ -41,9 +41,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                      <?php $i = 0; ?>
                       @foreach($usuarios as $user)
+                      <?php $i++; ?>
                       <tr>
-                        <td>{{$user->id}}</td>
+                        <td>{{$i}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->brand}}</td>
                         <td>{{$user->email}}</td>
