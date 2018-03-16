@@ -15,7 +15,7 @@ class CodesSeeder extends Seeder
 
       $faker = Faker\Factory::create();
 
-      $limit = 70;
+      $limit = 73;
 
       for ($i = 1; $i < $limit; $i++) {
           DB::table('codes')->insert([ //,

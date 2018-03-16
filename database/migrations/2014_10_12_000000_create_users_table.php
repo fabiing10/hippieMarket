@@ -20,9 +20,12 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('brand')->nullable();
+            $table->string('spot')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('email')->unique();
+            $table->dateTime('dateTime')->nullable();
+            $table->integer('carpa')->nullable();
             $table->string('password')->nullable();
             $table->string('password_decode')->nullable();
             $table->boolean('blocked')->nullable()->default(0);
@@ -34,6 +37,7 @@ class CreateUsersTable extends Migration
         Schema::create('codes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code');
+            $table->integer('carpa');
             $table->boolean('status');
             $table->timestamps();
         });

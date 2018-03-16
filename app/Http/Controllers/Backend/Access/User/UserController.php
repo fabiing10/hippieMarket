@@ -50,7 +50,7 @@ class UserController extends Controller
         $c = new Code;
         $usuarios = \DB::table('users as user')
           ->join('role_user as r_u', 'user.id', '=', 'r_u.user_id')
-          ->select('*')
+          ->select('user.*')
           ->where('r_u.role_id','=','3')
           ->get();
 

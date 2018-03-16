@@ -25,6 +25,7 @@
         @endif
 
         {{ Html::style('css/jquery.fancybox.min.css') }}
+        {{ Html::style('css/jquery-ui-1.8.13.custom.css') }}
 
         @yield('after-styles')
 
@@ -75,7 +76,10 @@
         @yield('after-scripts')
 
         {!! Html::script('js/jquery.fancybox.min.js') !!}
+        {!! Html::script('js/jquery-1.5.1.min.js') !!}
+        {!! Html::script('js/jquery-ui-1.8.13.custom.min.js') !!}
+        {!! Html::script('js/jquery-ui-timepicker-addon.js') !!}
         {!! Html::script('js/main.js') !!}
-        
+
     </body>
 </html>

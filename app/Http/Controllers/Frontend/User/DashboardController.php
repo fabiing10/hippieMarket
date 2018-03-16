@@ -20,38 +20,40 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        date_default_timezone_set('America/Bogota');
         $c = new Code;
         $user_code = new UserCode;
         $status = \DB::table('user_code as u_c')->select('*')->where('u_c.user_id','=',Auth::id())->count();
 
+        $uProfileId = Auth::id();
+        $userProfile = User::find($uProfileId);
 
-        if($status == true){
-          $status = \DB::table('user_code as u_c')->select('*')->where('u_c.user_id','=',Auth::id())->get();
-          foreach ($status as $s) {
-           $code_id = $s->code_id;
-          }
+        $spot = $userProfile->spot;
 
-          $cs = \DB::table('codes as code')
-               ->select('*')
-               ->where('code.id','=',$code_id)
-               ->get();
-           foreach ($cs as $code) {
-            $carpa = $code->carpa;
-           }
 
+        $status = \DB::table('user_code as u_c')->select('*')->where('u_c.user_id','=',Auth::id())->count();
+
+        if($status >= $spot){
+          $select = false;
         }else{
-          $carpa = 0;
+          $select = true;
         }
 
-
-
+        $carpas = \DB::table('user_code as u_c')
+          ->join('codes as c', 'u_c.code_id', '=', 'c.id')
+          ->select('c.*')
+          ->where('u_c.user_id','=',Auth::id())
+          ->get();
 
 
        return view('frontend.user.dashboard')
                     ->with('c',$c)
-                    ->with('carpa',$carpa)
+                    ->with('carpas',$carpas)
                     ->with('status',$status)
+                    ->with('select',$select)
                     ->with('userCode',$user_code);
+
+
     }
 
     public function save(DashboardRequest $request){
@@ -86,9 +88,9 @@ class DashboardController extends Controller
       $confirmation->direccion = $request->direccion;
       $confirmation->save();
 
-      $userCode =  User::find($user);
-      $userCode->carpa = true;
-      $userCode->save();
+      $userInfo =  User::find($user);
+      $userInfo->carpa = true;
+      $userInfo->save();
 
       return redirect('dashboard');
     }

@@ -9,6 +9,14 @@
     </h1>
 @endsection
 
+@section('after-styles')
+<style>
+div#ui-datepicker-div {
+    z-index: 10000 !important;
+}
+</style>
+@endsection
+
 @section('content')
     {{ Form::open(['route' => 'admin.access.user.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post']) }}
 
@@ -41,6 +49,15 @@
 
 
                 <div class="form-group">
+                    {{ Form::label('spot', 'Cupo', ['class' => 'col-lg-2 control-label']) }}
+
+                    <div class="col-lg-10">
+                        {{ Form::text('spot', null, ['class' => 'form-control', 'placeholder' => 'Cupo']) }}
+                    </div><!--col-lg-10-->
+                </div><!--form control-->
+
+
+                <div class="form-group">
                     {{ Form::label('phone', 'Telefono', ['class' => 'col-lg-2 control-label']) }}
 
                     <div class="col-lg-10">
@@ -57,8 +74,17 @@
                     </div><!--col-lg-10-->
                 </div><!--form control-->
 
+                <div class="form-group">
+                    {{ Form::label('dateTime', 'Fecha Ingreso', ['class' => 'col-lg-2 control-label']) }}
 
-          
+                    <div class="col-lg-10">
+                    {{ Form::text('dateTime', null, ['class' => 'form-control', 'id' => 'fechaAsignacion']) }}
+                    </div><!--col-lg-10-->
+                </div><!--form control-->
+
+
+
+
 
                 <div class="form-group" style="display:none;">
                     {{ Form::label('status', trans('validation.attributes.backend.access.users.active'), ['class' => 'col-lg-2 control-label']) }}

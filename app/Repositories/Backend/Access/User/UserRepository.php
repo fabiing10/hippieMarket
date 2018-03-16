@@ -352,6 +352,8 @@ class UserRepository extends BaseRepository
         $user->phone = $input['phone'];
         $user->address = '';
         $user->email = $input['email'];
+        $user->spot = $input['spot'];
+        $user->dateTime = date("Y-m-d H:i:s",strtotime($input['dateTime']));
         //$user->password = bcrypt($input['password']);
         $password = $this->randomKey(6);
         $user->password = bcrypt($password);
