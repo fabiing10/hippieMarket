@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.mandrillapp.com',
+    'host' => 'smtp.gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'email@laspuertasdelcielo.co',
+        'address' => 'hippiemarket.fep@gmail.com',
         'name' => 'Las Puertas Del Cielo',
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'Eventos',
+    'username' => 'hippiemarket.fep@gmail.com',
 
-    'password' => 'P6wQbTEYhFTotroSMTXZqQ',
+    'password' => 'abundancia5',
 
     /*
     |--------------------------------------------------------------------------
