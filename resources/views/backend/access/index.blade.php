@@ -69,7 +69,7 @@
 
 
             <div class="row">
-              <p class="text-info">Hola {{$user->name}}! Tus cupos han sido seleccionado correctamente, podras identificarlos en el mapa de la siguiente manera <span class="cupo_select">#</span></p>
+              <p class="text-info">Hola! Tus cupos han sido seleccionado correctamente, podras identificarlos en el mapa de la siguiente manera <span class="cupo_select">#</span></p>
               <div style="background-image: url('http://regionmojana.com/montaje.jpg')">
                   <div>
                   <table>
