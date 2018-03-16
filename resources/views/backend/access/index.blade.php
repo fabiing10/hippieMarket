@@ -5,6 +5,74 @@
 @section('after-styles')
     {{ Html::style("css/backend/plugin/datatables/dataTables.bootstrap.min.css") }}
     {{ Html::style("css/backend/style.css") }}
+    <style>
+    span.out {
+        display: block;
+        text-align: center;
+        color: #9e4c4c;
+        background-color: #ffc8c8;
+    }
+    span.out-enable {
+        background: #2d3750;
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: white;
+        font-weight: 100;
+        border-radius: 100%;
+    }
+    span.in {
+        text-align: center;
+        display: block;
+    }
+    ul.info-data {
+        float: left;
+        width: 50%;
+    }
+    span.cupo_select {
+        background: #2d3750;
+        padding: 5px 9px;
+        border-radius: 100%;
+        color: white;
+        margin-left: 10px;
+    }
+    p.text-info {
+        text-align: center;
+        margin-bottom: 52px;
+        background: #eaeaea;
+        padding: 15px 0px;
+    }
+    div#getting-started span {
+        color: white;
+        background: #2d3750;
+        border-radius: 100%;
+        padding: 10px;
+        width: 56px;
+        display: inline-block;
+        margin-left: 22px;
+    }
+    div#getting-started {
+        text-align: center;
+        font-size: 23px;
+        border: 1px solid #2d3750;
+        border-radius: 6px;
+        padding: 15px;
+        font-weight: 100;
+    }
+    ul.info-data li {
+        list-style-type: none;
+        color: #2d3750;
+        background: white;
+        width: 30px;
+        text-align: center;
+        border-radius: 100%;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    </style>
 @endsection
 
 @section('page-header')
