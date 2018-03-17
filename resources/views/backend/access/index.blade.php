@@ -120,15 +120,18 @@
                         <td>{{$user->password_decode}}</td>
                         <td>{{$user->phone}}</td>
                         <td>
+                          <ul style="list-style-type:none; margin:0px; padding:0px;">
                           <?php
                             $userId = $user->id;
-                            $carpa = $c->getCarpa($userId);
-                            echo $carpa;
+                            $carpas = $c->getCarpa($userId);
+                            foreach ($carpas as $carpa) {
+                              echo "<li style='float:left;'>".$carpa->carpa."-</li>";
+                            }
                           ?>
+                        </ul>
                         </td>
                         <td><a href="#" data-fancybox data-src="#email" href="javascript:;" onclick="enviarEmail({{$user->id}})">Enviar Email</a></td>
                         <!--<td>Opciones</td>-->
-
                       </tr>
                       @endforeach
                     </tbody>

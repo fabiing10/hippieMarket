@@ -25,32 +25,22 @@ class Code extends Model
     }
 
     public function getCarpa($userId){
-      $carpa = 0;
+
+      $carpas = 0;
       $count = \DB::table('user_code as u_c')
          ->select('u_c.user_id')
          ->where('u_c.user_id','=',$userId)
          ->count();
 
       if($count > 0){
+        $carpas = \DB::table('user_code as u_c')
+          ->join('codes as c', 'u_c.code_id', '=', 'c.id')
+          ->select('c.*')
+          ->where('u_c.user_id','=',$userId)
+          ->get();
 
-        $query = \DB::table('user_code as u_c')
-           ->select('*')
-           ->where('u_c.user_id','=',$userId)
-           ->get();
-        foreach ($query as $q) {
-         $code_id = $q->code_id;
-        }
-
-       $cs = \DB::table('codes as code')
-            ->select('*')
-            ->where('code.id','=',$code_id)
-            ->get();
-        foreach ($cs as $code) {
-         $carpa = $code->carpa;
-        }
       }
 
-
-      return $carpa;
+      return $carpas;
     }
 }

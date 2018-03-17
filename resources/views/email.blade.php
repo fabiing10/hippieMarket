@@ -14,6 +14,7 @@
                 <td>
                     <p style="text-align:center;">Por medio de la siguiente informacion usted podra efectuar su registro en el evento Hippie Market Seleccionando la carpa que desea.</p>
                     <br><br>
+                    <p style="text-align:center;">Recuerde que la plataforma estara habilitada desde la siguiente fecha: <b>{{$date}}<b></p>
                 </td>
 
             </tr>

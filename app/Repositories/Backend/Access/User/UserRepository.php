@@ -347,13 +347,14 @@ class UserRepository extends BaseRepository
 
         $user = self::MODEL;
         $user = new $user();
-        $user->name = $input['name'];
+        $user->name = '';
         $user->brand = $input['brand'];
-        $user->phone = $input['phone'];
+        $user->phone = '';
         $user->address = '';
         $user->email = $input['email'];
         $user->spot = $input['spot'];
-        $user->dateTime = date("Y-m-d H:i:s",strtotime($input['dateTime']));
+        $date = date("Y-m-d H:i:s",strtotime($input['dateTime']));
+        $user->dateTime = $date;
         //$user->password = bcrypt($input['password']);
         $password = $this->randomKey(6);
         $user->password = bcrypt($password);
@@ -363,6 +364,14 @@ class UserRepository extends BaseRepository
         $user->status = isset($input['status']) ? 1 : 0;
         $user->confirmation_code = md5(uniqid(mt_rand(), true));
         $user->confirmed = isset($input['confirmed']) ? 1 : 0;
+
+
+        $data = array( 'email' => $input['email'], 'password' => $password, 'date' => $date );
+        \Mail::send( 'email', $data, function( $message ) use ($data)
+        {
+            $message->to( $data['email'] )->from('email@laspuertasdelcielo.co', 'Las Puertas Del Cielo' )->subject( 'Registro Hippie Market' );
+        });
+
 
         return $user;
     }

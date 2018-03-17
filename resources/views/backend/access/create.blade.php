@@ -30,11 +30,12 @@ div#ui-datepicker-div {
             </div><!-- /.box-header -->
 
             <div class="box-body">
-                <div class="form-group">
+                <div class="form-group" style="display:none;">
                     {{ Form::label('name', trans('validation.attributes.backend.access.users.name'), ['class' => 'col-lg-2 control-label']) }}
 
                     <div class="col-lg-10">
-                        {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.access.users.name')]) }}
+                  
+                        <input type="hidden" name="name" id="name" value="Marca" />
                     </div><!--col-lg-10-->
                 </div><!--form control-->
 
@@ -57,13 +58,6 @@ div#ui-datepicker-div {
                 </div><!--form control-->
 
 
-                <div class="form-group">
-                    {{ Form::label('phone', 'Telefono', ['class' => 'col-lg-2 control-label']) }}
-
-                    <div class="col-lg-10">
-                    {{ Form::text('phone', null, ['class' => 'form-control', 'placeholder' => '# Telefono']) }}
-                    </div><!--col-lg-10-->
-                </div><!--form control-->
 
 
                 <div class="form-group">
