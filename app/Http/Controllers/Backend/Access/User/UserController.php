@@ -80,9 +80,10 @@ class UserController extends Controller
       foreach($users as $user){
         $email_to = $user->email;
         $password = $user->password_decode;
+        $date = $user->dateTime;
       }
 
-      $data = array( 'email' => $email_to, 'password' => $password );
+      $data = array( 'email' => $email_to, 'password' => $password , 'date' => $date);
       \Mail::send( 'email', $data, function( $message ) use ($data)
       {
           $message->to( $data['email'] )->from('email@laspuertasdelcielo.co', 'Las Puertas Del Cielo' )->subject( 'Registro Hippie Market' );
