@@ -16,7 +16,6 @@
                     <br><br>
                     <p style="text-align:center;">Recuerde que la plataforma estara habilitada desde la siguiente fecha: <b>{{$date}}<b></p>
                 </td>
-
             </tr>
             <tr>
               <td>
@@ -24,11 +23,8 @@
               </td>
             </tr>
             <tr>
-
-
-
               <td>
-                  <center><a href="registro.laspuertasdelcielo.co" style="background-color: rgba(128, 128, 128, 0.44);color: black;text-decoration: none;padding: 10px;width: 100%;display: block;margin-bottom: 20px;">Link de Registro</a></center>
+                  <center><a href="registro.delcieloproducciones.com" style="background-color: rgba(128, 128, 128, 0.44);color: black;text-decoration: none;padding: 10px;width: 100%;display: block;margin-bottom: 20px;">Link de Registro</a></center>
               </td>
             </tr>
             <tr>
