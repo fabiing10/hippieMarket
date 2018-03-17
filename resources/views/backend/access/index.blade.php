@@ -124,9 +124,12 @@
                           <?php
                             $userId = $user->id;
                             $carpas = $c->getCarpa($userId);
-                            foreach ($carpas as $carpa) {
-                              echo "<li style='float:left;'>".$carpa->carpa."-</li>";
+                            if($carpas != ''){
+                              foreach ($carpas as $carpa) {
+                                echo "<li style='float:left;'>".$carpa->carpa."-</li>";
+                              }
                             }
+
                           ?>
                         </ul>
                         </td>
