@@ -18,4 +18,8 @@ class LanguageController extends Controller
 
         return redirect()->back();
     }
+
+    public function contrato(){
+      return view('contrato');
+    }
 }

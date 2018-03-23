@@ -8,6 +8,9 @@
 // Switch between the included languages
 Route::get('lang/{lang}', 'LanguageController@swap');
 
+Route::get('contrato', 'LanguageController@contrato');
+
+
 Route::get('email', function(){
   \Mail::send('welcome', [], function ($message){
       $message->to('fabiing10@gmail.com')->subject('Testing mail');
